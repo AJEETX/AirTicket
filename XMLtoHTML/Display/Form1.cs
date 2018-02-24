@@ -22,7 +22,6 @@ namespace Display
          string searchXMLpattern = ConfigurationManager.AppSettings["xmlFilePattern"].ToString();
          string searchHTMLpattern = ConfigurationManager.AppSettings["htmlFilePattern"].ToString();
 
-         int countNumberReadFiles = 0;
         string searchCSSpattern = ConfigurationManager.AppSettings["cssFilePattern"].ToString();
         //assign the path of xml files to read from configuration file
         string xmlFilePath = Environment.CurrentDirectory + ConfigurationManager.AppSettings["xmlFilePath"].ToString();
