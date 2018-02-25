@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 using System.Diagnostics;
@@ -19,8 +12,8 @@ namespace Display
         #region Intialize variables
         Thread readThread, transformThread;
 
-         string searchXMLpattern = ConfigurationManager.AppSettings["xmlFilePattern"].ToString();
-         string searchHTMLpattern = ConfigurationManager.AppSettings["htmlFilePattern"].ToString();
+        string searchXMLpattern = ConfigurationManager.AppSettings["xmlFilePattern"].ToString();
+        string searchHTMLpattern = ConfigurationManager.AppSettings["htmlFilePattern"].ToString();
         string searchCSSpattern = ConfigurationManager.AppSettings["cssFilePattern"].ToString();
         string xmlFilePath = Environment.CurrentDirectory + ConfigurationManager.AppSettings["xmlFilePath"].ToString();
         string xslFilePath = Environment.CurrentDirectory + ConfigurationManager.AppSettings["xslFilePath"].ToString();

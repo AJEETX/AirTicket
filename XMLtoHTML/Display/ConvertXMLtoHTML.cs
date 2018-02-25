@@ -1,16 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections;
 using System.Linq;
-using System.Text;
 using System.Xml;
 using System.IO;
 using System.Xml.Xsl;
-using System.Threading.Tasks;
 using System.Collections.Concurrent;
-using System.Net;
 using System.Windows.Forms;
-using System.Configuration;
 
 namespace Display
 {
@@ -18,7 +13,6 @@ namespace Display
     {
         static IEnumerable<string> files; static int count = 0;
 
-        //ConcurrentQueue thread-safe first in-first out (FIFO) collection
        static  ConcurrentQueue<Tuple<string>> cq = new ConcurrentQueue<Tuple<string>>();
        
        #region  Get the list of all xml files from the folder i.e. \Data\Computers
